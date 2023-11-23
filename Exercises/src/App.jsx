@@ -10,6 +10,9 @@ import Comment from "./components/Comment";
 import ComplexComment from "./components/ComplexComponent";
 import Cats from "./components/BigCats";
 import SingleCat from "./components/SingleCat";
+import MoviesList from "./components/MovieList";
+import MoodChanger from "./components/MoodChanger";
+import EmojiChanger from "./components/Emoji";
 
 // This creates a new component as a function that returns some JSX.
 // Add this in App.jsx ABOVE the App component
@@ -40,6 +43,8 @@ function App() {
 
   return (
     <>
+      //EXERCISE 3
+      <EmojiChanger />
       <SingleCat />
       //EXERCISE 2
       <Cats />
@@ -48,6 +53,9 @@ function App() {
         {" "}
         <h2>This is the children from Greeting</h2>
       </Greeting>
+      //JUST CLASS exercises from here ⬇️
+      <MoodChanger />
+      <MoviesList />
       <Comment
         date={comment.date}
         text={comment.text}
